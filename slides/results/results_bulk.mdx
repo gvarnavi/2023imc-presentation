@@ -1,0 +1,34 @@
+---
+id: results_bulk
+sidebar_position: 2
+title: Bulk Antiferromagnets
+hide_table_of_contents: true
+hide_title: true
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import BulkAtomicModelImage from '@site/static/img/NiO-bulk_atomic-model.svg';
+import BulkGroundTruthImage from '@site/static/img/NiO-bulk_ground-truth.png';
+import BulkJointImage from '@site/static/img/NiO-bulk_joint-recon.png';
+
+## Bulk Antiferromagnetic NiO
+
+- Consider bulk antiferromagnetic  NiO
+  - $Ni_{\uparrow}$ (pink) spins up and $Ni_{\downarrow}$ (green) align on alternating [111] planes
+  - Magnetic contribution ~500x smaller than electrostatic contribution
+- Robust simultaneous adjoint reconstruction
+
+<Tabs>
+  <TabItem value="atomic-model" label="Atomic Model" default>
+    <BulkAtomicModelImage width="100%" height="auto"/>
+  </TabItem>
+  <TabItem value="ground-truth" label="Ground Truth">
+    <img src={BulkGroundTruthImage} width="100%" height="auto"/>
+  </TabItem>
+  <TabItem value="joint-recon" label="Simultaneous Adjoint Reconstruction">
+    <img src={BulkJointImage} width="100%" height="auto"/>
+  </TabItem>
+</Tabs>
+
